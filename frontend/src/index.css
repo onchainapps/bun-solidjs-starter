@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(168, 85, 247, 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, rgba(0, 229, 255, 0.04) 0%, transparent 50%),
+      #090a0f;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: rgba(0, 229, 255, 0.2);
+    color: #00e5ff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e2040;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2a2d55;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-brand-panel/80 backdrop-blur-xl border border-brand-border/50;
+  }
+
+  .glass-hover {
+    @apply transition-all duration-300;
+    &:hover {
+      @apply border-brand-cyan/30;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.08);
+    }
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-cyan to-brand-purple bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 font-semibold rounded-lg transition-all duration-300;
+    @apply bg-gradient-to-r from-brand-cyan to-brand-purple text-brand-bg;
+    @apply hover:shadow-lg hover:shadow-brand-purple/25 hover:scale-[1.02];
+    @apply active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply px-6 py-3 font-semibold rounded-lg transition-all duration-300;
+    @apply border border-brand-border/50 text-text-secondary;
+    @apply hover:border-brand-cyan/30 hover:text-text-primary;
+  }
+}
