@@ -6,6 +6,9 @@
 Bun · Elysia · SolidJS · Tailwind · TypeScript · PM2
 ```
 
+> **🤖 For AI agents (Shekinah, Claude, etc.):** Read `AGENTS.md` before starting.
+> It contains architecture, patterns, pitfalls, and examples tailored for AI coding agents.
+
 ## Quick Start
 
 ```bash
