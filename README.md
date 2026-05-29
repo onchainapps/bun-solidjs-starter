@@ -3,7 +3,7 @@
 **Production-ready full-stack boilerplate.** Clone and start building in 30 seconds.
 
 ```
-Bun · Elysia · SolidJS · Tailwind · TypeScript · PM2
+Bun · Elysia · SolidJS · Tailwind · TypeScript · PM2 · Sqlite3
 ```
 
 > **🤖 For AI agents (Shekinah, Claude, etc.):** Read `AGENTS.md` before starting.
