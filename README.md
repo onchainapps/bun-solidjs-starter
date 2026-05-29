@@ -39,6 +39,7 @@ bun run dev:ui     # Frontend on :5173 (proxied to backend)
 | **TypeScript** | End-to-end type safety, strict mode, no `any` |
 | **PM2** | Ecosystem config included — one command to production |
 | **Bun** | All-in-one runtime — no Node.js required |
+| **Sqlite3** | Portalble DB solution for local DB storage |
 
 ## Project Structure
 
